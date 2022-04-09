@@ -1,0 +1,84 @@
+body{
+	background-image: url(../img/reg.png); 
+}
+
+.container{
+	font-size: 20px;
+	font-weight: bold;
+    position: absolute;
+    top: 52%;
+    left: 39%;
+    margin-right: -50%; /*минус, потому что отображалось некрасиво*/
+    transform: translate(-50%, -50%); /*из угла правого в центр перемещаем*/
+}
+
+label{
+	color: white;
+}
+
+input{
+	border-radius: 10px;
+}
+
+.form-group{
+	text-align: left;
+	padding: 5px;
+    margin: 2px;
+}
+
+.form-control{
+	position: absolute;
+	left: 100%;
+}
+
+#btnSubmit{
+  position: absolute;
+  top: 30%;
+  left: 19%;
+  width: 11%;
+  transform:rotate(8deg);
+}
+
+#randName{
+  position: absolute;
+  top: 28%;
+  left: 8%;
+  width: 11%;
+  height: 20%;
+}
+
+#randPhone{
+  word-break: break-all;
+  position: absolute;
+  top: 48%;
+  left: 14%;
+  width: 3%;
+  height: 20%;
+}
+
+#randEmail{
+  word-break: break-all;
+  position: absolute;
+  top: 48%;
+  left: 10%;
+  width: 3%;
+  height: 20%;
+}
+
+button{
+  background: #FA0C54; 
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 15px;
+  box-shadow: 0 -3px #E50B4D inset;
+  transition: 0.2s;
+}
+
+button:hover { background: #E50B4D; }
+
+button:active {
+  background: #E50B4D;
+  box-shadow: 0 3px #E50B4D inset;
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Регистрация</title>
+		<link rel="icon" href="img/Logo.png">
+		<link rel = "stylesheet" href = "css/registration.css"> 
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">				
+					<form action="php/post.php" id="form">
+						<div class="form-group">
+							<label for="name">Имя пользователя:</label>
+							<input class="form-control" id="name" type="text" name="name">
+						</div>
+						<div class="form-group">
+							<label for="phone">Телефон:</label>
+							<input class="form-control" id="phone" type="tel" placeholder="+7(XXX)XXX-XX-XX" name="phone">
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input class="form-control" id="email" type="email" placeholder="user@gmail.com" name="email">
+						</div>
+						<div class="form-group">
+							<label for="password1">Пароль:</label>
+							<input class="form-control" type="password" name="password1">
+						</div>
+						<div class="form-group">
+							<label for="password2">Подтвердите пароль:</label>
+							<input class="form-control" type="password" name="password2" rows="4"></textarea>
+						</div>
+					</form>
+				</div>
+				<br>
+			</div>
+		</div>
+		<button id="btnSubmit">Зарегистрироваться</button>
+		<button id="randName">Сгенерировать имя</button>		
+		<button id="randPhone">т<br>е<br>л<br>е<br>ф<br>о<br>н</button>
+		<button id="randEmail">e<br>m<br>a<br>i<br>l</button>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/post.js"></script>
+		<script src="js/phoneGen.js"></script>
+		<script src="js/nameGen.js"></script>
+		<script src="js/emailGen.js"></script>
+
+	</body>
+
+</html>
